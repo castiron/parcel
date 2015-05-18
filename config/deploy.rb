@@ -19,7 +19,7 @@ namespace :deploy do
   desc 'Post deploy script (currently just updates custom colors for all sites)'
   task :post_deployment do
     on roles(:app), in: :sequence, wait: 5 do
-    execute "bash #{fetch(:application_root)}/current/debs/setup.sh"
+    execute "bash #{fetch(:application_root)}/current/config/setup.sh"
     execute "cd #{fetch:application_root}/current/debs/ && dpkg-scanpackages amd64 | gzip -9c > amd64/Packages.gz"
   end
 end
