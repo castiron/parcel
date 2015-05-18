@@ -2,7 +2,7 @@
 # Author: clark@castironcoding.com
 # Purpose: setup .deb symlinks on each deployment
 
-current_dir=$( cd "../$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+current_dir="/home/parcel/parcel/current"
 
 for i in $( find ${current_dir}/src -type f -name *.deb)
 do
