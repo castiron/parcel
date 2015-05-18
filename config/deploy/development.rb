@@ -1,5 +1,3 @@
-set :application, 'parcel.ciclabs.com'
-
 set :branch, ENV["REVISION"] || ENV["BRANCH_NAME"] || "master"
 # Simple Role Syntax
 # ==================
@@ -9,7 +7,7 @@ set :branch, ENV["REVISION"] || ENV["BRANCH_NAME"] || "master"
 
 # Extended Server Syntax
 # ======================
-server 'parcel.ciclabs.com', user: 'parcel', roles: %w{web app db}
+server 'default', user: 'vagrant', roles: %w{web app db}
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
