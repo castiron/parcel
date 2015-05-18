@@ -1,4 +1,4 @@
-set :application, 'parcel.cichq.com'
+set :application, 'parcel.cic-prd.com'
 
 set :branch, ENV["REVISION"] || ENV["BRANCH_NAME"] || "master"
 
@@ -11,7 +11,7 @@ set :branch, ENV["REVISION"] || ENV["BRANCH_NAME"] || "master"
 
 # Extended Server Syntax
 # ======================
-server 'parcel.cichq.com', user: 'parcel', roles: %w{web app db}
+server 'parcel.cic-prd.com', user: 'parcel', roles: %w{web app db}
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
